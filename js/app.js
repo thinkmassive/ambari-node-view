@@ -2018,9 +2018,10 @@ app.service('MainCluster', function(Cluster) {
 
 app.service('BuildCluster', function() {
     /* Cluster meta information */
-    this.clusterMeta = {'name': 'Horton-Cluster', 'stack': 'HDP-2.3', 'stackId': 'HDP', 'stackVersion': '2.3', 'isKerberized': 'false'};
+    this.clusterMeta = {'name': 'hdpcluster', 'stack': 'HDP-2.3', 'stackId': 'HDP', 'stackVersion': '2.3', 'isKerberized': 'false'};
     /* Default cluster */
-    var defCluster = [{'name': 'gateway.example.com', 'comps': [], 'cardinality': 1}, {'name': 'mgmt.example.com', 'comps': [], 'cardinality': 1}, {'name': 'master01.example.com', 'comps': [], 'cardinality': 1}, {'name': 'master02.example.com', 'comps': [], 'cardinality': 1}, {'name': 'master03.example.com', 'comps': [], 'cardinality': 1}, {'name': 'worker0#{0}.example.com', 'comps': [], 'cardinality': 3}];
+    //var defCluster = [{'name': 'mgmt.example.com', 'comps': ['zookeeper_server', 'hdfs_client', 'yarn_client', 'map_reduce2_client', 'tez_client'], 'cardinality': 1}, {'name': 'master01.example.com', 'comps': [ 'namenode','historyserver','zookeeper_server'], 'cardinality': 1}, {'name': 'master02.example.com', 'comps': ['resourcemanager','secondary_namenode','app_timeline_server','zookeeper_server'], 'cardinality': 1}, {'name': 'worker0#{0}.example.com', 'comps': ['datanode','nodemanager'], 'cardinality': 1}];
+    var defCluster = [{'name': 'mgmt.example.com', 'comps': [], 'cardinality': 1}, {'name': 'master01.example.com', 'comps': [], 'cardinality': 1}, {'name': 'master02.example.com', 'comps': [], 'cardinality': 1}, {'name': 'worker0#{0}.example.com', 'comps': [], 'cardinality': 1}];
     /* Built cluster */
     this.cluster = defCluster;
     /* List of av. bundles, e.g. HDFS HA */
