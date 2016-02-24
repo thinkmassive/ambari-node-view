@@ -1,0 +1,34 @@
+{
+  "name": "ambari-node-view",
+  "version": "0.0.1",
+  "description": "This application lets you export and visualize the current state of your Ambari managed Hadoop cluster. The web application is based on Angular and Bootstrap, the exporter is based on Python.",
+  "main": "index.html",
+  "window": {
+    "toolbar": false,
+    "resizable": false,
+    "width": 1200,
+    "height": 800,
+    "min_width": 800,
+    "min_height": 600,
+    "max_width": 2800,
+    "max_height": 1440,
+    "position": "mouse"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thinkmassive/ambari-node-view.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thinkmassive/ambari-node-view/issues"
+  },
+  "homepage": "https://github.com/thinkmassive/ambari-node-view",
+  "dependencies" :
+  {
+    "nwjs" : ">=1.1.1"
+  }
+}

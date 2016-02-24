@@ -18,40 +18,40 @@ app.run(function(editableOptions, editableThemes) {
 app.config(function($routeProvider) {
     $routeProvider
     .when('/', {
-        templateUrl: 'node_view.html',
+        templateUrl: 'partials/node_view.html',
         controller: 'NodeViewController as nodeCtrl'
     })
     .when('/legend', {
-        templateUrl: 'legend.html',
+        templateUrl: 'partials/legend.html',
         controller: 'NodeViewController as nodeCtrl'
     })
     .when('/build', {
-        templateUrl: 'cluster_build.html',
+        templateUrl: 'partials/cluster_build.html',
         controller: 'BuildController as buildCtrl'
     })
     .when('/blueprint', {
-        templateUrl: 'blueprint.html',
+        templateUrl: 'partials/blueprint.html',
         controller: 'BlueprintController as bpCtrl'
     })
     .when('/settings/services', {
-        templateUrl: 'settings_services.html',
+        templateUrl: 'partials/settings_services.html',
         controller: 'EditEnvController as editEnvCtrl'
     })
     .when('/settings/components', {
-        templateUrl: 'settings_components.html',
+        templateUrl: 'partials/settings_components.html',
         controller: 'EditEnvController as editEnvCtrl'
     })
     .when('/about', {
-        templateUrl: 'about.html'
+        templateUrl: 'partials/about.html'
     })
     .when('/help', {
-        templateUrl: 'about.html'
+        templateUrl: 'partials/about.html'
     })
     .when('/settings/download', {
-        templateUrl: 'download_exporter.html'
+        templateUrl: 'partials/download_exporter.html'
     })
     .when('/settings/importexport', {
-        templateUrl: 'importexport.html',
+        templateUrl: 'partials/importexport.html',
         controller: 'ImportExportController as imexCtrl'
     })
     .otherwise({

@@ -3,3 +3,7 @@ _archive/
 _dummy
 js/.app.js.swp
 npm-debug.log
+node_modules/
+nw
+app.nw
+nwjs-v*-osx-x64/

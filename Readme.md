@@ -18,9 +18,19 @@ python exporter.py --target c6601.ambari.apache.org:8080 --cluster mycluster --u
 
 ##Using the Angular App
 The Angular app provides an easy way of displaying the exported cluster. Just open the html/index.html file on your webserver, import your cluster and you are good to go.
+####Run as native app
+You can run the Angular app in a local window (outside the browser) using NW.js. This section is optional.
+1. Install NW.js in project root dir (only needs to be done once)
+```
+curl -s -o nwjs.zip http://dl.nwjs.io/v0.12.3/nwjs-v0.12.3-osx-x64.zip && unzip -q nwjs.zip && rm nwjs.zip
+ln -s nwjs-*/nwjs.app/Contents/MacOS/nwjs nw
+```
+2. Execute the nwjs.sh script to launch the app
+`./nwjs.sh`
+
 ###Import Cluster and Environment
 To import your cluster and enviornment, go to the Import/Export page under Settings. The enviornment has a pre-defined default value, the cluster field is expecting the output from the exporter script (exporter.py)
-
+ 
 ###Export Environment
 If you have changed the enviornment and want to export it now, go to Settings->Import/Export and copy the Enviornment from the textarea under Export
 
